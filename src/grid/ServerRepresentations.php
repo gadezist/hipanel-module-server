@@ -25,7 +25,7 @@ class ServerRepresentations extends RepresentationCollection
                     'checkbox',
                     $hostingExists ? 'ips' : null,
                     'client', 'dc', 'actions', 'server',
-                    Yii::$app->user->can('order.read') ? 'order_no' : null,
+                    'order_no',
                     'hwsummary',
                 ]),
             ] : null,

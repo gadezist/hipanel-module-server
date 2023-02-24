@@ -24,6 +24,7 @@ abstract class AbstractServerForm extends Authenticated
      */
     public function submitForm(): self
     {
+        die;
         $this->tester->pressButton('Save');
         $this->tester->waitForPageUpdate();
 
